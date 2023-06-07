@@ -1,6 +1,6 @@
 [package]
 name = "k"
-version = "0.29.1"
+version = "0.30.0"
 authors = ["Takashi Ogura <t.ogura@gmail.com>"]
 edition = "2021"
 description = "k is for kinematics"
@@ -20,13 +20,12 @@ parking_lot = "0.12"
 simba = "0.7"
 thiserror = "1.0"
 tracing = "0.1"
-urdf-rs = "0.6.8"
-
+urdf-rs = "0.7"
 serde = { version = "1.0", features = ["derive"], optional = true }
 
 [target.'cfg(not(target_family = "wasm"))'.dev-dependencies]
 clap = { version = "4", features = ["derive"] }
-criterion = "0.4"
+criterion = "0.5"
 kiss3d = "0.35"
 rand = "0.8"
 
